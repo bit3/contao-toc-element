@@ -1,0 +1,60 @@
+{
+	"name": "bit3/contao-toc-element",
+	"description": "Content navigation for the Contao Open Source CMS.",
+	"keywords": ["contao", "navigation", "contents"],
+	"type": "contao-module",
+	"homepage": "http://bit3.de",
+	"license": "LGPL-3.0+",
+	"authors": [
+		{
+			"name": "Tristan Lins",
+			"email": "tristan.lins@bit3.de",
+			"homepage": "http://bit3.de",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"email": "info@bit3.de",
+		"issues": "https://github.com/bit3/contao-toc-element/issues",
+		"wiki": "https://github.com/bit3/contao-toc-element/wiki",
+		"irc": "irc://irc.freenode.org/contao.dev",
+		"source": "https://github.com/bit3/contao-toc-element"
+	},
+	"require": {
+		"php": ">=5.3",
+		"contao/core": ">=3.2.1,<4-dev",
+		"contao-community-alliance/composer-plugin": "~2.0",
+		"contao-community-alliance/event-dispatcher": "~1.0",
+		"contao-community-alliance/events-create-options": "~1.0",
+		"bit3/contao-xnavigation": "~2.0",
+		"bit3/contao-xnavigation-article": "~1.0",
+		"bit3/contao-xnavigation-content": "~1.0",
+		"bit3/contao-meta-palettes": "~1.0",
+		"bit3/contao-twig": "~1.10"
+	},
+	"require-dev": {
+		"bit3/php-coding-standard": "@dev"
+	},
+	"autoload": {
+		"psr-4": {
+			"Bit3\\Contao\\TableOfContentsElement\\": "src/"
+		}
+	},
+	"extra": {
+		"contao": {
+			"sources": {
+				"module": "system/modules/toc-element"
+			},
+			"transifex": {
+				"project": "contao-toc-element",
+				"prefix": "main-",
+				"languages_cto": "contao/languages",
+				"languages_tx": ".tx"
+			}
+		},
+		"branch-alias": {
+			"dev-master": "2.0.x-dev",
+			"dev-develop": "2.1.x-dev"
+		}
+	}
+}

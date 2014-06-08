@@ -1,5 +1,14 @@
-.project
-.buildpath
-.settings
-.idea
-system/modules/CeNavigation/config/autoload.ini
+/vendor/
+/.tx/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs 
+/.buildpath
+/.project
+/.settings/
+/.build/
+/.idea/
+/nbproject/
